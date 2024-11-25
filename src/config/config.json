@@ -1,0 +1,398 @@
+{
+  "app": {
+    "width": 1080,
+    "height": 1920,
+    "backgroundColor": "#b7e7fa",
+    "bg_image": "bg"
+  },
+  "model": {
+    "time": 30,
+    "tiles": [0, 1, 0, 1, 5, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4],
+    "rows": 4,
+    "cols": 4
+  },
+  "popup": {
+    "start": {
+      "images": {
+        "bg": {
+          "texture": "popup_bg",
+          "position" : {
+            "x": 40,
+            "y": 781
+          }
+        }
+      },
+      "text":  {
+        "position" : {
+          "x": 82,
+          "y": 825
+        },
+        "text": "MERGE ALL SIMILAR ITEMS BEFORE TIME RUNS OUT",
+        "color": "#687164",
+        "font": {
+          "name": "Chango",
+          "size": 49,
+          "align": "center"
+        }
+      },
+      "button": {
+        "position": {
+          "x": 542,
+          "y": 1034
+        },
+        "press_scale": 0.8,
+        "image": "button",
+        "text": {
+          "position" : {
+            "x": 82,
+            "y": 825
+          },
+          "text": "START",
+          "color": "#FFFFFF",
+          "font": {
+            "name": "Chango",
+            "size": 86,
+            "align": "center"
+          }
+        }
+      },
+      "animations": {
+        "show": {
+          "parts": {
+            "main_container": {
+              "to": false,
+              "x": 0,
+              "y": 0,
+              "scale": 0,
+              "duration": 1,
+              "ease": "bounce.out",
+              "isLast": false
+            },
+            "text": {
+              "to": false,
+              "isText": true,
+              "delay": 0.8,
+              "duration": 0.02,
+              "isLast": true
+            },
+            "button": {
+              "to": false,
+              "scale": 0,
+              "x": 0,
+              "y": 0,
+              "alpha": 0,
+              "delay": 1.2,
+              "duration": 0.1,
+              "ease": "bounce.out",
+              "isLast": false
+            }
+          }
+        },
+        "hide": {
+          "parts": {
+            "main_container": {
+              "to": true,
+              "x": 0,
+              "y": 0,
+              "scale": 0,
+              "duration": 0.3,
+              "ease": "bounce.in",
+              "isLast": false
+            },
+            "button": {
+              "to": true,
+              "scale": 0,
+              "x": 0,
+              "y": 0,
+              "delay": 0.2,
+              "duration": 0.1,
+              "ease": "bounce.in",
+              "isLast": true
+            }
+          }
+        }
+      }
+    },
+    "fail": {
+      "images": {
+        "bg": {
+          "texture": "fail_bg",
+          "position" : {
+            "x": 85,
+            "y": 470
+          }
+        },
+        "text": {
+          "texture": "fail_text",
+          "position" : {
+            "x": 159,
+            "y": 832
+          }
+        }
+      },
+      "button": {
+        "position": {
+          "x": 542,
+          "y": 1700
+        },
+        "press_scale": 0.8,
+        "image": "button_fail",
+        "text": {
+          "position" : {
+            "x": 210,
+            "y": 1688
+          },
+          "text": "TRY AGAIN",
+          "color": "#FFFFFF",
+          "font": {
+            "name": "Chango",
+            "size": 86,
+            "align": "center"
+          }
+        }
+      },
+      "animations": {
+        "show": {
+          "parts": {
+            "main_container": {
+              "to": false,
+              "x": 0,
+              "y": 0,
+              "scale": 0,
+              "duration": 1,
+              "ease": "bounce.out",
+              "isLast": false
+            },
+            "button": {
+              "to": false,
+              "scale": 0,
+              "x": 0,
+              "y": 0,
+              "alpha": 0,
+              "delay": 1.2,
+              "duration": 0.1,
+              "ease": "bounce.out",
+              "isLast": true
+            }
+          }
+        },
+        "hide": {
+          "parts": {
+            "main_container": {
+              "to": true,
+              "x": 0,
+              "y": 0,
+              "scale": 0,
+              "duration": 0.3,
+              "ease": "bounce.in",
+              "isLast": false
+            },
+            "button": {
+              "to": true,
+              "scale": 0,
+              "x": 0,
+              "y": 0,
+              "delay": 0.2,
+              "duration": 0.1,
+              "ease": "bounce.in",
+              "isLast": true
+            }
+          }
+        }
+      }
+    },
+    "win": {
+      "images": {
+        "bg": {
+          "texture": "nice_work_bg",
+          "position" : {
+            "x": 85,
+            "y": 470
+          }
+        },
+        "text": {
+          "texture": "nice_work_text",
+          "position" : {
+            "x": 159,
+            "y": 790
+          }
+        }
+      },
+      "animations": {
+        "show": {
+          "parts": {
+            "main_container": {
+              "to": false,
+              "x": 0,
+              "y": 0,
+              "scale": 0,
+              "duration": 1,
+              "ease": "bounce.out",
+              "isLast": false
+            }
+          }
+        },
+        "hide": {
+          "parts": {
+            "main_container": {
+              "to": true,
+              "x": 0,
+              "y": 0,
+              "scale": 0,
+              "duration": 0.3,
+              "ease": "bounce.in",
+              "isLast": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "ui": {
+    "images": {
+      "counter_arrow": {
+        "texture": "counter_arrow",
+        "position": {
+          "x": 90,
+          "y": 383
+        }
+      },
+      "counter_bg": {
+        "texture": "counter_bg",
+        "position": {
+          "x": 418,
+          "y": 366
+        }
+      }
+    },
+    "texts": {
+      "text_total": {
+        "position" : {
+          "x": 140,
+          "y": 355
+        },
+        "text": "TOTAL",
+        "color": "#FFFFFF",
+        "stroke_color": "#1DA7E1",
+        "stroke_width": 10,
+        "font": {
+          "name": "Chango",
+          "size": 55,
+          "align": "center"
+        }
+     },
+      "text_counter": {
+        "position" : {
+          "x": 431,
+          "y": 370
+        },
+        "text": "0",
+        "color": "#1EA7E1",
+        "font": {
+          "name": "Chango",
+          "size": 41,
+          "align": "center"
+        }
+     }
+    },
+    "timer": {
+      "bg_color": "#FFFFFF",
+      "fill_color": "#80BE1F",
+      "position": {
+        "x": 94,
+        "y": 1431
+      },
+      "width": 896,
+      "height": 23,
+      "round": 10
+    }
+  },
+  "tile": {
+    "position": {
+      "x": 90,
+      "y": 470
+    },
+    "step": 230,
+    "bg_texture": "tile_bg",
+    "tile_textures": {
+      "tile_blue": 0,
+      "tile_red": 1,
+      "tile_pink": 2,
+      "tile_orange": 3,
+      "tile_green": 4,
+      "tile_yellow": 5
+    },
+    "particle": {
+      "lifetime": {
+        "min": 0.3,
+        "max": 0.5
+      },
+      "frequency": 0.001,
+      "spawnChance": 1,
+      "particlesPerWave": 50,
+      "emitterLifetime": 0.1,
+      "maxParticles": 500,
+      "pos": {
+        "x": 0,
+        "y": 0
+      },
+      "addAtBack": false,
+      "behaviors": [
+        {
+          "type": "alpha",
+          "config": {
+            "alpha": {
+              "list": [
+                { "value": 1, "time": 0 },
+                { "value": 0, "time": 1 }
+              ]
+            }
+          }
+        },
+        {
+          "type": "scale",
+          "config": {
+            "scale": {
+              "list": [
+                { "value": 0.08, "time": 0 },
+                { "value": 0.15, "time": 0.5 },
+                { "value": 0.02, "time": 1 }
+              ]
+            }
+          }
+        },
+        {
+          "type": "moveSpeed",
+          "config": {
+            "speed": {
+              "list": [
+                { "value": 500, "time": 0 },
+                { "value": 50, "time": 1 }
+              ],
+              "isStepped": false
+            }
+          }
+        },
+        {
+          "type": "rotationStatic",
+          "config": {
+            "min": 0,
+            "max": 360
+          }
+        },
+        {
+          "type": "spawnShape",
+          "config": {
+            "type": "circle",
+            "data": {
+              "x": 0,
+              "y": 0,
+              "radius": 70
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+

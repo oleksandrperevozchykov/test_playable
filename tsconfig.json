@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "target": "ES6",
+    "module": "ES6",
+    "lib": ["DOM", "ES6"],
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*"]
+}
